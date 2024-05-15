@@ -1,0 +1,286 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+
+body {
+    background-image: url('imagens/marvel.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.dropbtn {
+    background-color: rgb(182, 0, 0);
+    font-weight: 600;
+    color: white;
+    padding: 8px;
+    font-size: 24px;
+    border: none;
+    border-radius: 30px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(70, 0, 0, 0.2);
+    z-index: 1;
+    
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+   
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #ff0000;}
+
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+#header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header ul li{
+    list-style: none;
+    margin-left: 20px;
+    font-size: 20px;
+   
+}
+
+#header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+
+#header ul li a:hover{
+    background: linear-gradient(45deg, rgb(255, 29, 29), rgb(255, 76, 76));
+    color: rgb(253, 252, 252);
+}
+
+
+.logo {
+    font-family: sans-serif;
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.logo p {
+    margin: 0;
+}
+
+.logo img {
+    width: 190px; 
+    height: auto; 
+    margin: 10px; 
+    vertical-align: middle; 
+}
+
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .content{
+    position: absolute;
+    left: 2px;
+    top: 625px;
+}
+
+section .content .details span{
+    position: relative;
+    top: -170px;
+    left: 108px;
+    color: ghostwhite;
+    margin: 12px;
+    font-weight: 400;
+}
+
+
+
+.button span{
+    position: relative;
+    top: -140px;
+    left: 108px;
+    color: white;
+    margin: 10px;
+    font-weight: 500;
+}
+
+.button .btn1 {
+    background: red;
+    padding: 12px 26px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.button .btn1:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.button .btn2 {
+    background: #ffffff2e;
+    padding: 12px 26px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.button .btn2:hover{
+    background: #fff;
+    color: red;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 330px;
+    background: linear-gradient(to top, #0c181c, transparent);
+    z-index: -1;
+    overflow: hidden;
+}
+
+.sec{
+    position: relative;
+    top: 0;
+    height: 2600px;
+    padding-left: 110px;
+    background-color: #02161c;
+}
+
+.sec span{
+    position: relative;
+    margin-bottom: 10px;
+    color: #fff;
+    margin: 7px;
+}
+
+.sec .title{
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sec .btn3{
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.info{
+    position: absolute;
+    top: -100px;
+}
+
+.sec .row{
+    display: flex;
+    position: absolute;
+    top: -88px;
+    height: 250px;
+    width: 82%;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap; 
+    margin-top: 20px;
+}
+
+.sec .row .col{
+   
+    width: 250px; 
+    height: 350px; 
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+.sec .row .col img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.sec .row .col img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  
+}
+
+.sec .row2{
+    position: absolute;
+    top: 2200px;
+    height: 200px;
+    width: 82%;
+    color: white;
+    font-weight: 100;
+}
+
+.sec .row2 .col1{
+    width: 810px;
+    float: left;
+    margin-right: 70px;
+}
+
+
+
+
+
+.col p {
+    text-align: center; 
+    color: white; 
+    font-size: 16px; 
+}
+
+h2{
+    color: white;
+    height: 100px;
+    width: 100px;
+}
+ 
